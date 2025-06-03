@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на таблицю множення</title>
+    
+    <!-- Підключення JavaScript-файлу для функціоналу тесту -->
+    <script src="lab7_1.js" defer></script>
+
+    <style>
+        /* Задання основного стилю для сторінки */
+        body { font-family: Arial, sans-serif; text-align: center; }
+        
+        /* Контейнер для тесту з відступом зверху */
+        .container { margin-top: 50px; }
+        
+        /* Стиль для поля введення відповіді */
+        input { width: 50px; text-align: center; }
+        
+        /* Відступи між кнопками */
+        button { margin: 5px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Тест на таблицю множення</h2>
+        
+        <!-- Відображення загального рахунку тесту -->
+        <p>Загальний рахунок: <span id="score">0</span>% (<span id="correct">0</span> правильних відповідей з <span id="total">0</span>)</p>
+        
+        <!-- Місце для показу завдання -->
+        <p id="task">Задача: </p>
+        
+        <!-- Поле для введення відповіді користувача -->
+        <input type="text" id="answer">
+        
+        <!-- Кнопка для перевірки відповіді -->
+        <button onclick="checkAnswer()">Перевірити</button>
+        
+        <!-- Кнопка для переходу до наступного завдання -->
+        <button onclick="nextTask()">Наступне завдання</button>
+        
+        <!-- Відображення результату перевірки -->
+        <p id="result"></p>
+    </div>
+
+</body>
+</html>
